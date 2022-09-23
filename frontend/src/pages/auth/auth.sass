@@ -1,0 +1,47 @@
+@import '../../var'
+
+#signin, #signup
+    width: 300px
+    background-color: $secondColor
+    display: flex
+    padding: 10px
+    flex-direction: column
+    gap: 10px
+    border-radius: 5px
+
+    input
+        background-color: $mainColor
+        color: $white
+        border: 0px
+        outline: none
+        text-align: center
+        font-family: $fontFamily
+        font-size: $fontSize
+        padding: 5px 0px
+        border-radius: 5px
+        
+    #warning
+        text-align: center
+        color: $red
+        font-size: calc( $fontSize - 5px )
+
+    button
+        width: 200px
+        background-color: $mainColor
+        border: 0px
+        cursor: pointer
+        color: $white
+        font-family: $fontFamily
+        font-size: $fontSize
+        padding: 10px 0px
+        margin-left: auto
+        margin-right: auto
+        border-radius: 5px
+
+    button:hover
+        opacity: 0.8
+
+#signup
+    #warning
+        text-align: left
+        margin-top: -10px

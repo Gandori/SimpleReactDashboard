@@ -1,0 +1,43 @@
+@import ./var
+@import './media'
+
+html, body, #root, #app
+    background-color: $mainColor
+    color: $white
+    margin: 0px
+    padding: 0px
+    width: 100%
+    max-width: 1000px
+    height: 100%
+    overflow: hidden
+    user-select: none
+    margin-left: auto
+    margin-right: auto
+    font-family: $fontFamily
+    font-size: $fontSize
+
+    @include width480
+        $fontSize: 15px
+        font-size: $fontSize
+
+#app
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 10px 0px
+    height: calc( 100% - 20px )
+    gap: 10px
+
+    >div
+        width: 95%
+
+    #content
+        height: calc( 100% - $headerHeight - $footerHeight)
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow-x: hidden
+        overflow-y: hidden
+
+        @include width480
+            overflow-y: scroll

@@ -1,0 +1,43 @@
+@import '../../var'
+
+#popup
+    background-color: $secondColor
+    height: 50px
+    display: flex
+    align-items: center
+    border-right: 0px
+    position: absolute
+    top: 70px
+    right: -500px
+    z-index: 100
+    padding: 0px 10px
+    animation: fadeIn 0.5s 0s 1 forwards, fadeOut 0.5s 2s 1 forwards
+
+    @keyframes fadeIn
+        0% 
+            right: -500px
+        20%
+            right: -400px
+        40%
+            right: -300px
+        60%
+            right: -200px
+        80%
+            right: -100px
+        100% 
+            right: 0px
+
+    @keyframes fadeOut
+        0% 
+            right: 0px
+        20%
+            right: -100px
+        40%
+            right: -200px
+        60%
+            right: -300px
+        80%
+            right: -400px
+        100% 
+            right: -500px
+            visibility: hidden

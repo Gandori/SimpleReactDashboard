@@ -1,0 +1,45 @@
+@import '../../var'
+#header
+    height: $headerHeight
+    background-color: $secondColor
+    border-radius: 5px
+    display: flex
+    justify-content: space-around
+
+    #headerLeft
+        width: 100%
+        display: flex
+        justify-content: flex-start
+        font-weight: bold
+        align-items: center
+        padding-left: 5px
+
+    #headerRight
+        width: 100%
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        gap: 5px
+        padding-right: 5px
+
+        #img
+            width: 30px
+            height: 30px
+            border: 1px solid $white
+            background-color: $mainColor
+            border-radius: 100%
+            cursor: pointer
+
+        #link
+            display: flex
+            align-items: center
+            padding: 10px 5px
+            text-decoration: none
+            color: $white
+            background-color: $mainColor
+            border-radius: 5px
+            border: 0px
+
+        #link:hover
+            cursor: pointer
+            opacity: 0.8
